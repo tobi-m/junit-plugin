@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('initialize') {
+    stage('Initialize') {
       steps {
         echo 'Hello world!'
+        sh 'echo PATH = ${PATH}'
       }
     }
   }
