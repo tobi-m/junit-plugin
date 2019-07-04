@@ -9,5 +9,10 @@ echo M2_HOME = ${M2_HOME}
 mvn clean'''
       }
     }
+    stage('Build') {
+      steps {
+        sh 'mvn package'
+      }
+    }
   }
 }
